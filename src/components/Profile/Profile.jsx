@@ -1,6 +1,8 @@
 import React from 'react';
 import classes from'./Profile.module.css';
 
+import MyPosts from './MyPosts/MyPosts';
+
 const Profile = () => {
     return (
         <div className={classes.content}>
@@ -11,19 +13,7 @@ const Profile = () => {
                 java + description
                 {/* <img src="https://www.nasa.gov/sites/default/files/styles/image_card_4x3_ratio/public/thumbnails/image/tcl-4_reno-50-iotd.jpg"/> */}
             </div>
-            <div>
-                My post
-                <div>new post</div>
-            </div>
-            <div>
-                <div>
-                    post 1
-                </div>
-                <div>
-                    post 2
-                </div>
-            </div>
-            
+            <MyPosts />
         </div>
     )
 }
