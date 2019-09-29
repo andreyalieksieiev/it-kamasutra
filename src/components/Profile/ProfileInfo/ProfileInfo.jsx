@@ -9,7 +9,6 @@ const ProfileInfo = () => {
             </div>
             <div className={classes.descriptionBlock}>
                 java + description
-                {/* <img src="https://www.nasa.gov/sites/default/files/styles/image_card_4x3_ratio/public/thumbnails/image/tcl-4_reno-50-iotd.jpg"/> */}
             </div>
         </div>
     )
