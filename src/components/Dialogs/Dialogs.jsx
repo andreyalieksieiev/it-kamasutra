@@ -4,10 +4,6 @@ import classes from './Dialogs.module.css';
 import DialogItem from './DialogItem/DialogsItem';
 import Message from './Message/Message';
 
-
-
-
-
 const Dialogs = (props) => {
 
     let dialogsElements = props.state.dialogs.map( d  => <DialogItem id={d.id} name={d.name} />);
@@ -20,6 +16,14 @@ const Dialogs = (props) => {
             </div>
             <div className={classes.messages}>
                 { messagesElement }
+            </div>
+            <div>
+                <div>
+                    <textarea></textarea>
+                </div>
+                <div>
+                    <button>Add post</button>
+                </div>
             </div>
         </div>
     ) 
