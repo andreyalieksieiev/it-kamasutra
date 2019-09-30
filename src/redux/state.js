@@ -4,8 +4,7 @@ let state = {
             {id: 1, message: "Hi, ho are you?", likesCount: 12},
             {id: 2, message: "It's my first post", likesCount: 11},
             {id: 1, message: "fhjgff", likesCount: 12},
-            {id: 1, message: "rrrrrrrr", likesCount: 13},
-            {id: 1, message: "qqqqqqq", likesCount: 12}
+            {id: 1, message: "rrrrrrrr", likesCount: 13}
         ]
     },
     dialogsPage: {

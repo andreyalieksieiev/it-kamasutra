@@ -10,7 +10,6 @@ import Dialogs from './components/Dialogs/Dialogs';
 
 const App = (props) => {
     return (
-        <BrowserRouter>
             <div className="app-wrapper">
                 <Header />
                 <Navbar />
@@ -19,7 +18,6 @@ const App = (props) => {
                     <Route path="/profile" render={ () =>  <Profile state={props.state.profilePage} /> }/>
                 </div>
             </div>
-        </BrowserRouter>
     )
 }
 
