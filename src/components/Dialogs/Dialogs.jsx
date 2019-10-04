@@ -3,7 +3,7 @@ import classes from './Dialogs.module.css';
 
 import DialogItem from './DialogItem/DialogsItem';
 import Message from './Message/Message';
-import { sendMessageCreator, updateNewMessageBodyCreator } from './../../redux/state';
+import { sendMessageCreator, updateNewMessageBodyCreator } from './../../redux/dialogs-reducer';
 
 const Dialogs = (props) => {
 
@@ -12,6 +12,7 @@ const Dialogs = (props) => {
     let dialogsElements = state.dialogs.map( d  => <DialogItem id={d.id} name={d.name} />);
     let messagesElement = state.messages.map( m => <Message  id={m.id} message={m.message} /> );
     let newMessageBody = state.newMessageBody
+
 
     let onSendMessageClick = () => {
         props.store.dispatch(sendMessageCreator())
@@ -22,6 +23,7 @@ const Dialogs = (props) => {
         props.store.dispatch(updateNewMessageBodyCreator(body))
     }
 
+    
     return (
         <div className={classes.dialogs}>
             <div className={classes.dialogsItems}>
