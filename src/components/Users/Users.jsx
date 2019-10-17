@@ -1,5 +1,5 @@
 import React from  'react';
-import styles from './users.module.css';
+import { User } from './styled';
 
 let Users = (props) => {
 
@@ -20,7 +20,7 @@ let Users = (props) => {
         props.users.map(u => <div key={u.id} >
             <span>
                 <div>
-                    <img src={u.photoUrl} className={styles.userPhoto} />
+                    <User src={u.photoUrl} />
                 </div>
                 <div>
                     { u.followed 
