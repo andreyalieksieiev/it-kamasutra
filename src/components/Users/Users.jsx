@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { User, Spa } from './styled';
 import userPhoto from '../../assets/images/user.png';
 
@@ -14,14 +15,16 @@ let Users = (props) => {
     return <div>
         <div>
             {pages.map( p => {
-                    return <Spa onClick={(e) => {props.onPageChanged(p)}} >{p}</Spa>
+                return <Spa onClick={(e) => {props.onPageChanged(p)}} >{p}</Spa>
             })}
         </div>
     {
     props.users.map(u => <div key={u.id} >
         <span>
             <div>
-                <User src={ u.photos.small !=null ? u.photos.small :  userPhoto} />
+                <NavLink to={'/profile/' + u.id}>
+                    <User src={ u.photos.small !=null ? u.photos.small :  userPhoto} />
+                </NavLink>
             </div>
             <div>
                 { u.followed 
