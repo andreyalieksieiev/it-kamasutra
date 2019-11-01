@@ -3,6 +3,7 @@ import { Block } from './styled';
 import Preloader from '../../common/Preloader/Preloader';
 
 const ProfileInfo = (props) => {
+    console.log(props);
     if (!props.profile) {
         return <Preloader />
     }
