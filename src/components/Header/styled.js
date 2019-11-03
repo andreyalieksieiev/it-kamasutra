@@ -9,3 +9,10 @@ export const Img = styled.img`
     width: 20px;
 `;
 
+export const Log = styled.div`
+    float: right;  
+    a {
+        color: white;
+    }
+`;
+
